@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<context:annotation-config/>
+<bean id = "dbInfo1" class="com.mybean.MyDbInfo">
+<property name ="dbInfo" value ="Db connection established"/>
+</bean>
+ <bean id="service_plan" class="com.mybean.ServicePlan">
+ 	<property name="planName" value ="half yearly Plan"/>
+ 	<property name="validityDays" value ="180"/>
+ 	<property name="price" value ="599"/>
+ 	
+ 	
+ </bean>
+ <bean id ="customer" class="com.mybean.Customer">
+ <property name="customerName" value ="Peter"/>
+ 	<property name="emailId" value ="abc@gmail.com"/>
+ 	<property name="mobileNo" value ="599599599"/>
+ 	
+ </bean>
+ </beans>
